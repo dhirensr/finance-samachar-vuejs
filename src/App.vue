@@ -1,14 +1,18 @@
 <template>
-  <div id="app">
+  <div class="container" id="app" width="30%">
     <img alt="finance samachar logo" src="./assets/fs_logo.png">
-    <p>  The latest business, finance, mutual funds and stock market news from the last 48 hours from major Indian news sources aggregated in one place. </p>
+
+    <p class="lead text-center">  The latest business, finance, mutual funds and stock market news from the last 48 hours from major Indian news sources aggregated in one place. </p>
     <ul>
       <li>
+        <p class="lead text-center"> Support us on
         <a href="https://play.google.com/store/apps/details?id=com.theviralappshub.financesamachar" target="_blank">
           <img src="https://pulse.zerodha.com/images/android.svg" alt="Google playstore" title="Google playstore">
-          </a>
+        </a>
+        </p>
       </li>
     </ul>
+
     <NewsComponent />
   </div>
 </template>
@@ -32,10 +36,6 @@ export default {
     margin:0px;
 }
 
-p {
-margin-left: 650px;
-width : 30%;
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

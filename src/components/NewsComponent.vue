@@ -1,10 +1,12 @@
 <template>
   <div>
-      <button v-on:click="callBackend('top-news')">Top News</button>
-      <button v-on:click="callBackend('stock-market')">Stock Market News</button>
-      <button v-on:click="callBackend('commodities')">Commodities News</button>
-      <button v-on:click="callBackend('ipo-fpo')">IPO/FPO News</button>
-      <button v-on:click="callBackend('mutual-funds')">Mutual funds News</button>
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <button type="button" class="btn btn-secondary btn-block" v-on:click="callBackend('top-news')">Top News</button>
+      <button type="button" class="btn btn-secondary btn-block" v-on:click="callBackend('stock-market')">Stock Market News</button>
+      <button type="button" class="btn btn-secondary btn-block" v-on:click="callBackend('commodities')">Commodities News</button>
+      <button type="button" class="btn btn-secondary btn-block" v-on:click="callBackend('ipo-fpo')">IPO/FPO News</button>
+      <button type="button" class="btn btn-secondary btn-block" v-on:click="callBackend('mutual-funds')">Mutual funds News</button>
+      </div>
     <ul>
       <li v-for="(item,index) in info" :key="index">
         <a target= "_blank" :href= "item.url"> {{ item.title }}   </a>
@@ -43,7 +45,7 @@ h3 {
   margin: 40px 0 0;
 }
 button {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 li{
   margin: 10px 0;
